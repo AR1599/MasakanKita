@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--secondary-background-color: #fcfcfc;
+	--primary-background-color: #fffffa;
+	--primary-color: #222;
+	--font-family-primary: "Mulish", sans-serif;
+}
+
+body {
+	background-color: var(--secondary-background-color);
+	font-family: var(--font-family-primary);
+	color: var(--primary-color);
+}
+
+/*Navbar*/
+.navbar {
+	background-color: var(--primary-background-color);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	padding: 15px 25px;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.08);
+	-webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.08);
+}
+
+.right-navbar {
+	display: flex;
+	align-items: center;
+}
+
+/*Logo*/
+.logo a {
+	color: #222;
+	text-decoration: none;
+}
+
+.logo h2 {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.logo h2 span {
+	 font-weight: normal;
+}
+
+
+/*Nav-link*/
+.nav-link {
+	display: flex;
+	list-style-type: none;
+}
+
+.nav-link li {
+	position: relative;
+}
+
+.link-menu {
+	padding: 10px;
+	font-weight: 700;
+	color: var(--primary-color);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.link-menu:hover {
+	color: #7c7c7c;
+}
+
+#masuk {
+	width: 100px;
+	background-color: var(--primary-background-color);
+	color: var(--primary-color);
+	border: 2px solid var(--primary-color);
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: var(--font-family-primary);
+	font-size: 15px;
+	font-weight: 700;
+	margin-left: 10px;
+	transition: color 0.3s ease;
+}
+
+#masuk:hover {
+	background-color: var(--primary-color);
+	color: var(--primary-background-color);
+	font-weight: 800;
+}
+
+/*Menu-dropdown*/
+.dropdown:hover .menu-dropdown {
+	display: block;
+}
+
+.menu-dropdown {
+	position: absolute;
+	display: none;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--primary-background-color);
+	padding: 10px 25px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
+	min-width: 330px;
+	z-index: 1;
+}
+
+.link-menu-dropdown {
+	display: flex;
+	flex-direction: row;
+	color: #000;
+	text-decoration: none;
+	padding: 10px 0px;
+	transition: color 0.3s ease;
+}
+
+.link-menu-dropdown:hover {
+	color: #7c7c7c;
+}
+
+.link-menu-dropdown h3 {
+	font-size: 15px;
+}
+
+.link-menu-dropdown p {
+	font-size: 14px;
+}
+
+.img-link {
+	display: flex;
+	align-items: center;
+	padding-right: 25px;
+}
+
+/*Content*/
+main {
+	display: flex;
+	justify-content: center;
+	padding-top: 90px;
+}
+
+.content {
+	background-color: var(--primary-background-color);
+	width: 600px;
+	padding: 30px;
+	border-radius: 10px;
+	text-align: left;
+	margin-top: 50px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.content .byline {
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.content .tongseng {
+	width: 100%;
+	height: 300px;
+	margin-top: 40px;
+	border-radius: 10px;
+}
+
+.content h1 {
+	font-size: 40px;
+	font-weight: 800;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.content h2 {
+	font-size: 25px;
+	font-weight: 800;
+	margin-top: 15px;
+}
+
+.content h3 {
+	font-size: 20px;
+	font-weight: 800;
+	margin-top: 15px;
+}
+
+.content p {
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.content ul, ol {
+	font-size: 16px;
+	margin-left: 50px;
+}
